@@ -1,0 +1,8 @@
+body {
+    background-color: #D2DCDF;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+}
