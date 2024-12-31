@@ -8,8 +8,8 @@ function displayAllEntries() {
     }
 
     for (let i = 0; i < localStorage.length; i++) {
-        const key = localStorage.key(i); // Get the key
-        const value = localStorage.getItem(key); // Get the associated value
+        const key = localStorage.key(i);
+        const value = localStorage.getItem(key);
 
         // Create a div to display the key-value pair
         const entry = document.createElement("div");
