@@ -1,4 +1,3 @@
-// Function to display all key-value pairs from localStorage
 function displayAllEntries() {
     const container = document.getElementById("historyContainer");
 
