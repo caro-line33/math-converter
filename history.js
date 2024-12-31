@@ -10,7 +10,6 @@ function displayAllEntries() {
         const key = localStorage.key(i);
         const value = localStorage.getItem(key);
 
-        // Create a div to display the key-value pair
         const entry = document.createElement("div");
         entry.className = "entry";
         entry.textContent = `Timestamp: ${new Date(parseInt(key)).toLocaleString()}, Value: ${value}`;
@@ -18,6 +17,5 @@ function displayAllEntries() {
     }
 }
 
-// Call the function on page load
 displayAllEntries();
 
