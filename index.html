@@ -3,28 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>math converter</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yuji+Syuku&display=swap" rel="stylesheet"> 
 </head>
 <body>
     <div class="container">
-        <a href="">math converter</a>
-        <a href="">conversion history</a>
+        <a href="https://github.com/caro-line33/math-converter.git" target="_blank">math converter</a>
+        <a href="history.html"target="_blank">conversion history</a>
     </div>
-    <p>enter your formula:</p>
-    <math-field style="font-size:2rem; display: block" id="formula"></math-field>
-    <p>convert to</p>
-    <select name="options" id="options">
-        <option value="" style="display: None;">Pick One</option>
-        <option value="ascii-math">ascii math</option>
-        <option value="latex">latex</option>
-        <option value="math-json">math json</option>
-        <option value="math-ml">math ml</option>
-        <option value="plain-text">plain text</option>
-        <option value="spoken-text">spoken text</option>
-    </select>
-    <textarea name="" id="output" style="font-size:2rem; display: block" readonly></textarea>
-    <button id="save">save this conversion</button>
+    <div class="bodyContainer">
+        <div>
+            <p>enter your formula:</p>
+            <math-field style="font-size:2rem; display: block" id="formula"></math-field>
+        </div>
+        <div>
+            <span>convert to</span>
+            <select name="options" id="options">
+                <option value="" style="display: None;">Pick One</option>
+                <option value="ascii-math">ascii math</option>
+                <option value="latex">latex</option>
+                <option value="math-json">math json</option>
+                <option value="math-ml">math ml</option>
+                <option value="plain-text">plain text</option>
+                <option value="spoken-text">spoken text</option>
+            </select>
+            <textarea name="" id="output" style="font-size:2rem; display: block" readonly></textarea>
+            <div style="display: flex; justify-content: flex-end; gap:5px;">
+                <button id="copy">copy</button>
+                <button id="save">save this conversion</button>
+            </div>
+        </div>
+    </div>
     <script type="module" src="main.js"></script>
 </body>
 </html>
